@@ -1,6 +1,6 @@
 package com.book.algorithm.basics;
 
-public class Loop {
+public class BasicLoop {
 
     // Q7. sum 1~n : n=7
     public static int sum(int n){
