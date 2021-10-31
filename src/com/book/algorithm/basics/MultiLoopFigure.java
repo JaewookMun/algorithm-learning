@@ -60,6 +60,19 @@ public class MultiLoopFigure {
         }
     }
 
+    // Q17. n단 피라미드 출력 - 숫자
+    public static void npira(int n){
+        for(int i=0; i<n; i++){
+            for(int j=0; j<2*n-1; j++){
+                if(j<n-(i+1) || j>=(n-(i+1))+2*(i+1)-1){
+                    System.out.print(" ");
+                } else {
+                    System.out.print((i+1)%10);
+                }
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         triangleLB(3);
@@ -73,5 +86,8 @@ public class MultiLoopFigure {
 
         spira(4);
         spira(10);
+
+        npira(4);
+        npira(12);
     }
 }
