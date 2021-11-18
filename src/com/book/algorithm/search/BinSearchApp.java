@@ -7,10 +7,19 @@ public class BinSearchApp {
 
         int number=0;
 
-        for(int i=0; i<a.length; i++){
-
+        for(int i=0; i<n; i++){
+            if(a[i] == key){
+                idx[number]=i;
+                number++;
+            }
         }
 
         return number;
+    }
+
+    public static void main(String[] args) {
+        int[] a={1,9,2,9,4,6,7,9};
+        int[] idx=new int[8];
+        System.out.println(searchIdx(a, 8, 9, idx));
     }
 }
