@@ -42,11 +42,14 @@ public class BinSearchPrinterApp {
             }
             System.out.println();
 
-            if(array[medium]==target){
+            if(array[medium] == target){
                 System.out.println(target+"는 ["+medium+"]에 있습니다.");
                 break;
+            } else if(array[medium] < target){
+                // medium=medium/2*3;
+            } else {
+                medium/=2;
             }
-            medium/=2;
         }
 
 
@@ -55,8 +58,9 @@ public class BinSearchPrinterApp {
     }
 
     public static void main(String[] args) {
-        int[] temp={1,2,3,5,6,8,9};
+        //int[] temp={1,2,3,5,6,8,9};
+        int[] temp={5,7,8,9,10,11,1,2,4,3,6,15,16,17,18,19,20};
 
-        printBinSearching(temp, 2);
+        printBinSearching(temp, 20);
     }
 }
