@@ -54,7 +54,6 @@ public class BinSearchPrinterApp {
 
 
 
-
     }
 
     public static void main(String[] args) {
