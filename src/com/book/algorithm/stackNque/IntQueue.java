@@ -12,4 +12,58 @@ public class IntQueue {
 
     // RuntimeException vs Exception -> diff...
 
+    public class EmptyIntQueueException extends RuntimeException {
+        public EmptyIntQueueException() {
+        }
+    }
+
+    public class OverflowIntQueueException extends RuntimeException {
+        public OverflowIntQueueException() {
+        }
+    }
+
+    // constructor
+    public IntQueue(int capacity) {
+        size = front = rear = 0;
+        max = capacity;
+        try {
+            que = new int[max];
+        } catch (OutOfMemoryError e){
+            max = 0;
+        }
+    }
+
+    // enque
+    public int enque(int x) {
+        if(size >= max){
+            throw new OverflowIntQueueException();
+        }
+
+        que[rear++] = x;
+        size++;
+
+        if(rear == max) rear=0;
+
+        return x;
+    }
+
+    // deque
+    public int deque(){
+        if(size <= 0){
+            throw new EmptyIntQueueException();
+        }
+
+        int x = que[front++];
+        size--;
+
+        if(front == max) front=0;
+
+        return x;
+    }
+
+    // peek
+    // indexOf
+    // ...
+
+    // Q5 serach(int x)
 }
