@@ -62,8 +62,34 @@ public class IntQueue {
     }
 
     // peek
+    public int peek(){
+        if(size == 0){
+            throw new EmptyIntQueueException();
+        }
+        return que[front];
+    }
+
     // indexOf
+    // > 검색대상을 줄일 수 있음.
+    public int indexOf(int x){
+        for(int i=0; i<size; i++){
+            int idx = i+front;
+            if(que[idx] == x){
+                return idx;
+            }
+        }
+        return -1;
+    }
     // ...
 
+    //
+
     // Q5 serach(int x)
+    public int search(int x){
+        for(int i=0; i<size; i++){
+            if(que[i+front] == x)
+                return i+1;
+        }
+        return 0;
+    }
 }
