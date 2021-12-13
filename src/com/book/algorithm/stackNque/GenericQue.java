@@ -1,6 +1,7 @@
 package com.book.algorithm.stackNque;
 
 import java.util.ArrayList;
+import java.util.Queue;
 
 public class GenericQue<E> {
     private int front;
@@ -26,5 +27,22 @@ public class GenericQue<E> {
         que = (E[]) new Object[max];
     }
 
+    public E enQue(E e){
+        que[rear++] = e;
+        size++;
+
+        if(rear == max) rear=0;
+
+        return e;
+    }
+
+    public E deQue(){
+        E e = que[front++];
+        size--;
+
+        if(front == max) front = 0;
+
+        return e;
+    }
 
 }
