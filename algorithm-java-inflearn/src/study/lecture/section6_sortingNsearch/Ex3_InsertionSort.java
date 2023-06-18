@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // 삽입 정렬
 // 오름차순
-public class InsertionSort {
+public class Ex3_InsertionSort {
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         int num = in.nextInt();

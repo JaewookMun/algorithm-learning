@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // 버블 정렬
 // 오름차순
-public class BubbleSort {
+public class Ex2_BubbleSort {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
         int number = in.nextInt();

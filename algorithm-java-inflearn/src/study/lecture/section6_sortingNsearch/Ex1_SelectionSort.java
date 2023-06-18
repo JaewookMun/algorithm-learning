@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // 선택 정렬 (제자리 정렬 알고리즘의 하나)
 // 오름차순
-public class SelectionSort {
+public class Ex1_SelectionSort {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

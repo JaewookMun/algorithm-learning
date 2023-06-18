@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // LRU Algorithm - 캐시 메모리 페이지 교체 알고리즘
 // Least Recently Used
-public class LeastRecentlyUsed {
+public class Ex4_LeastRecentlyUsed {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // 중복 확인
 // 풀이 - 정렬 후 중복되는 값 확인
-public class DuplicationCheck {
+public class Ex5_DuplicationCheck {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

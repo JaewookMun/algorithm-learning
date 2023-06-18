@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 // 장난 꾸러기
 // 깊은 복사***
-public class Mischief {
+public class Ex6_Mischief {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int people = in.nextInt();

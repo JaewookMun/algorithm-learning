@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 // 이분 검색 - Binary Search algorithm
-public class BinarySearch {
+public class Ex8_BinarySearch {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int size = in.nextInt();

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 // (임의) 결정 알고리즘 - 뮤직비디오 > 이분검색 활용
-public class DecisionAlgorithmFirst {
+public class Ex9_DecisionAlgorithmFirst {
 
     private static int solution(int[] arr, int dvdSize) {
         int answer = 0;

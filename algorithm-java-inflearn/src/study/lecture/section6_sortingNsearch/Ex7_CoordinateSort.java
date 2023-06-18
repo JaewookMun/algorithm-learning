@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 // 좌표 정렬
-public class CoordinateSort {
+public class Ex7_CoordinateSort {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
