@@ -24,10 +24,11 @@ public class Ex4_Fibonacci {
         int n = 10;
         // 피보나치 수열의 나열 - 재귀 활용
         // -> 시간이 오래 걸림
-        for(int i=1; i<=n; i++) System.out.println(dfs(i) + " ");
+//        for(int i=1; i<=n; i++) System.out.print(dfs(i) + " ");
 
         // 0번 인덱스는 필요 없기 때문에 length 를 n+1로 설정
         fibo = new int[n+1];
-        for(int i=1; i<=n; i++) System.out.println(fibo[i] + " ");
+        dfs(n);
+        for(int i=1; i<=n; i++) System.out.print(fibo[i] + " ");
     }
 }
