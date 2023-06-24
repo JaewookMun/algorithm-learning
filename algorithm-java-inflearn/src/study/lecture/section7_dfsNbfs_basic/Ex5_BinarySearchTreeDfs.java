@@ -2,10 +2,10 @@ package study.lecture.section7_dfsNbfs_basic;
 
 // 이진트리 순회 (깊이 우선 탐색)
 // 깊이 우선 탐색 방식 - 1. 전위 순회, 2. 중위 순회, 3. 후위 순회
-public class Ex5_BinaryTree {
-    Node root;
+public class Ex5_BinarySearchTreeDfs {
+    NodeA root;
 
-    public void dfs(Node root) {
+    public void dfs(NodeA root) {
         if(root==null) return;
         else {
 //            System.out.print(root.data + " "); // <- 전위 순회
@@ -17,24 +17,24 @@ public class Ex5_BinaryTree {
     }
 
     public static void main(String[] args) {
-        Ex5_BinaryTree tree = new Ex5_BinaryTree();
-        tree.root = new Node(1);
-        tree.root.lt = new Node(2);
-        tree.root.rt = new Node(3);
-        tree.root.lt.lt = new Node(4);
-        tree.root.lt.rt = new Node(5);
-        tree.root.rt.lt = new Node(6);
-        tree.root.rt.rt = new Node(7);
+        Ex5_BinarySearchTreeDfs tree = new Ex5_BinarySearchTreeDfs();
+        tree.root = new NodeA(1);
+        tree.root.lt = new NodeA(2);
+        tree.root.rt = new NodeA(3);
+        tree.root.lt.lt = new NodeA(4);
+        tree.root.lt.rt = new NodeA(5);
+        tree.root.rt.lt = new NodeA(6);
+        tree.root.rt.rt = new NodeA(7);
         tree.dfs(tree.root);
 
     }
 }
 
-class Node {
+class NodeA {
     int data;
-    Node lt, rt;
+    NodeA lt, rt;
 
-    public Node(int val) {
+    public NodeA(int val) {
         data = val;
         lt=rt=null;
     }
