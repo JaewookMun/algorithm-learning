@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // 합이 같은 부분집합 (DFS : 아마존 인터뷰)
 // 일차원 배열의 각 요소 인덱스를 level 처럼 활용하면서 배열을 계속 전달
-public class Ex1_PartialGroup {
+public class Ex1_PartialGroup_DFS {
     static String answer = "NO";
     static int n, total = 0;
     boolean flag = false;
@@ -24,7 +24,7 @@ public class Ex1_PartialGroup {
     }
 
     public static void main(String[] args) {
-        Ex1_PartialGroup T = new Ex1_PartialGroup();
+        Ex1_PartialGroup_DFS T = new Ex1_PartialGroup_DFS();
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
         int[] arr = new int[n];
