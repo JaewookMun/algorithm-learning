@@ -3,25 +3,25 @@ package study.lecture.section5_datastructure;
 import java.util.Scanner;
 import java.util.Stack;
 
-// 1. 올바른 괄호 - Stack 구조
-public class Ex1_CorrectParenthesis {
+// 2. 괄호문자 제거
+public class Ex2_DeleteParenthesis {
     public String solution(String str) {
-        String answer = "YES";
+        String answer = "";
         Stack<Character> stack = new Stack<>();
         for (char x : str.toCharArray()) {
-            if(x=='(') stack.push(x);
-            else {
-                if(stack.isEmpty()) return "NO";
-                stack.pop();
+            if (x == ')') {
+                while(stack.pop()!='(');
             }
+            else stack.push(x);
         }
-        if(!stack.isEmpty()) return "NO";
+
+        for (int i = 0; i < stack.size(); i++) answer += stack.get(i);
 
         return answer;
     }
 
     public static void main(String[] args) {
-        Ex1_CorrectParenthesis app = new Ex1_CorrectParenthesis();
+        Ex2_DeleteParenthesis app = new Ex2_DeleteParenthesis();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(app.solution(str));
