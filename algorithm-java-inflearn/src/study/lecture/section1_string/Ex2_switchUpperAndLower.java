@@ -2,7 +2,8 @@ package study.lecture.section1_string;
 
 import java.util.Scanner;
 
-public class P2_switchUpperAndLower {
+// 대소문자 변환
+public class Ex2_switchUpperAndLower {
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         String str = in.next();
