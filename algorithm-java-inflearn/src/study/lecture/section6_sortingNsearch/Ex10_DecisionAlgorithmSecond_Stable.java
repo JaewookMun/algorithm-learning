@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 // 마구간 정하기 - 결정 알고리즘
 // 유효성을 체크하는 메서드를 만드는 능력이 중요.
-public class Ex10_DecisionAlgorithmSecond {
+public class Ex10_DecisionAlgorithmSecond_Stable {
 
     private static int solution(int size, int n, int[] arr) {
         int answer = 0;
